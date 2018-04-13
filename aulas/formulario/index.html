@@ -3,23 +3,107 @@
   <head>
     <title>Formulário</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
   </head>
-  <body> 
-    <form action="action_page.php">
+  <body>
+    <div class="formulario">
+    <form action="action_page.php" class="form">
+      <h2>Informações pessoais e de contato</h2>
       <fieldset>
-        <legend>Personal Information</legend>
+        <legend>Dados Pessoais</legend>
         Name:<br>
         <input type="text" name="name" required><br>
-        Email:<br>
-        <input type="email" name="email" required><br>
+        <br>
         Senha:<br>
         <input type="password" name="password" required><br>
+        <br>
         Gender:<br>
         <input type="radio" name="gender" value="male" checked> Male<br>
         <input type="radio" name="gender" value="female"> Female<br>
         <input type="radio" name="gender" value="other"> Other<br>
-        <input type="submit" value="Submit">
       </fieldset>
+      <fieldset>
+        <legend>Informações de Contato</legend>
+        Cidade:<br>
+        <input type="text" name="cidade"/><br>
+        <br>
+        Estado:<br>
+        <select name="estados-brasil">
+        	<option value="AC">Acre</option>
+        	<option value="AL">Alagoas</option>
+        	<option value="AP">Amapá</option>
+        	<option value="AM">Amazonas</option>
+        	<option value="BA">Bahia</option>
+        	<option value="CE">Ceará</option>
+        	<option value="DF">Distrito Federal</option>
+        	<option value="ES">Espírito Santo</option>
+        	<option value="GO">Goiás</option>
+        	<option value="MA">Maranhão</option>
+        	<option value="MT">Mato Grosso</option>
+        	<option value="MS">Mato Grosso do Sul</option>
+        	<option value="MG">Minas Gerais</option>
+        	<option value="PA">Pará</option>
+        	<option value="PB">Paraíba</option>
+        	<option value="PR">Paraná</option>
+        	<option value="PE">Pernambuco</option>
+        	<option value="PI">Piauí</option>
+        	<option value="RJ">Rio de Janeiro</option>
+        	<option value="RN">Rio Grande do Norte</option>
+        	<option value="RS">Rio Grande do Sul</option>
+        	<option value="RO">Rondônia</option>
+        	<option value="RR">Roraima</option>
+        	<option value="SC">Santa Catarina</option>
+        	<option value="SP">São Paulo</option>
+        	<option value="SE">Sergipe</option>
+        	<option value="TO">Tocantins</option>
+        </select><br>
+        <br>
+        Telefone/Celular:<br>
+        <input type="text" name="phone"/><br>
+        <br>
+        Email:<br>
+        <input type="email" name="email" required><br>
+      </fieldset>
+      
+      <h2>Dados Profissionais/curriculares</h2>
+      <fieldset>
+        <legend>Média atual na Graduação</legend>
+        <input type="radio" name="media_graduacao" value="c"/> entre 5 e 6.9 <br>
+        <input type="radio" name="media_graduacao" value="b"/> entre 7 e 8.9 <br>
+        <input type="radio" name="media_graduacao "value="c"/> entre 9 e 10 <br>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Conhecimento em linguagens</legend>
+        <h3>Linguagens de programação</h3>
+          <input type="checkbox" name="linguagem" value="c">C<br>
+          <input type="checkbox" name="linguagem" value="c++">C++<br>
+          <input type="checkbox" name="linguagem" value="java">Java<br>
+          <input type="checkbox" name="linguagem" value="go">Go<br>
+          <input type="checkbox" name="linguagem" value="python">Python<br>
+          <input type="checkbox" name="linguagem" value="ruby">Ruby<br>
+          <input type="checkbox" name="linguagem" value="javascript">JavaScript<br>
+          Outras:<br>
+          <input type="text" name="linguagem"><br>
+          <br>
+          <h3>Nível de fluência na língua Inglesa</h3><br>
+          <input type="radio" name="nivel_ingles" value="baixo"/> Baixo <br>
+          <input type="radio" name="nivel_ingles" value="razoavel"/> Razoável <br>
+          <input type="radio" name="nivel_ingles" value="bom"/> Bom <br>
+          <input type="radio" name="nivel_ingles" value="avancado"/> Avançado ou Fluente <br>
+          <br>
+          Fala outros idiomas? Se sim, escreva o idioma junto com nível de conhecimento <br>
+          <input type="text" name="outros_idiomas"><br>
+          <br>
+          Currículo em PDF: <input name="myFile" type="file"><br>
+      </fieldset>
+      <br>
+      Gostaria de deixar alguma informação a mais que não conste nos dados solicitados?<br>
+      <textarea rows="4" cols="50" placeholder=":)"></textarea><br>
+      <br>
+      <input type="submit" value="Enviar candidatura"><br>
+
     </form>
+    </div>
   </body>
 </html>
