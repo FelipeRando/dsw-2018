@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tipos de input</title>
+  </head>
+  <body>
+    <form style="text-align: center;">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Idade:<input type="number" name="idade" min="18" id="idade_pessoa"/><br>
+            Pontos:<input type="range" name="points" min="0" max="10" id="points">
+            <span class="points-number">50</span><br>
+            Data: <input type="date" name="data"/><br>
+            Cor: <input type="color" name="cor"/><br>
+            Arquivo: <input type="file" name="arquivo"/><br>
+            Enviar: <input type="image" name="botao_imagem" src="http://www.heroes-strategie.com/css/images/icones/franchises/overwatch.png" width="30px" height="30px"/><br>
+            Medidor: <meter min="0" max="100" value="75" low="33" high="66" optimum="70">75</meter><br>
+        </fieldset>
+    </form>
+    <p id="demo">Paragrafo</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+  <script>
+     function myFunction() {
+       document.getElementById("demo").innerHTML = "Paragraph changed.";
+     }
+  </script>
+  </body>
+</html>
